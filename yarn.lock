@@ -1165,6 +1165,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@davidodio/gatsby-plugin-emotion-css@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@davidodio/gatsby-plugin-emotion-css@workspace:."
+  dependencies:
+    "@babel/cli": ^7.8.4
+    "@babel/core": ^7.8.4
+    "@babel/runtime": ^7.8.4
+    "@emotion/babel-preset-css-prop": ^10.0.27
+    babel-preset-gatsby-package: ^0.2.16
+  peerDependencies:
+    "@emotion/core": ^10.0.5
+    gatsby: ^2.0.0
+  languageName: unknown
+  linkType: soft
+
 "@emotion/babel-plugin-jsx-pragmatic@npm:^0.1.5":
   version: 0.1.5
   resolution: "@emotion/babel-plugin-jsx-pragmatic@npm:0.1.5"
@@ -1755,29 +1770,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-env@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "cross-env@npm:7.0.0"
-  dependencies:
-    cross-spawn: ^7.0.1
-  bin:
-    cross-env: src/bin/cross-env.js
-    cross-env-shell: src/bin/cross-env-shell.js
-  checksum: 2/2c638649830df34f69bf06f2969ce2679c86cd4e1d0422e96e40576addfbdde3a03553914b3cbfd47b9430b8cf9d9999b2c7adb99bd3b8fadd51e20e63cfd17b
-  languageName: node
-  linkType: hard
-
-"cross-spawn@npm:^7.0.1":
-  version: 7.0.1
-  resolution: "cross-spawn@npm:7.0.1"
-  dependencies:
-    path-key: ^3.1.0
-    shebang-command: ^2.0.0
-    which: ^2.0.1
-  checksum: 2/c37c136bda1342fe8dbd40a99d9c434ef510fb9741da4d386d0f2fe3d707166fc92d8d8e815f636e7fea93cc32ecd3636bc1e5adcabdee0b4587b6d52b27f002
-  languageName: node
-  linkType: hard
-
 "csstype@npm:^2.5.7":
   version: 2.6.9
   resolution: "csstype@npm:2.6.9"
@@ -2133,22 +2125,6 @@ fsevents@^1.2.7:
   checksum: 2/ffad86e7d2010ba179aaa6a3987d2cc0ed48fa92d27f1ed84bfa06d14f77deeed5bfbae7f00bdebc0c54218392cab2b18ecc080e2c72f592431927b87a27d42b
   languageName: node
   linkType: hard
-
-"gatsby-plugin-emotion-css@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "gatsby-plugin-emotion-css@workspace:."
-  dependencies:
-    "@babel/cli": ^7.8.4
-    "@babel/core": ^7.8.4
-    "@babel/runtime": ^7.8.4
-    "@emotion/babel-preset-css-prop": ^10.0.27
-    babel-preset-gatsby-package: ^0.2.16
-    cross-env: ^7.0.0
-  peerDependencies:
-    "@emotion/core": ^10.0.5
-    gatsby: ^2.0.0
-  languageName: unknown
-  linkType: soft
 
 "gauge@npm:~2.7.3":
   version: 2.7.4
@@ -3174,13 +3150,6 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"path-key@npm:^3.1.0":
-  version: 3.1.1
-  resolution: "path-key@npm:3.1.1"
-  checksum: 2/e44aa3ca9faed0440994883050143b1214fffb907bf3a7bbdba15dc84f60821617c0d84e4cc74e1d84e9274003da50427f54d739b0b47636bcbaff4ec71b9b86
-  languageName: node
-  linkType: hard
-
 "path-parse@npm:^1.0.6":
   version: 1.0.6
   resolution: "path-parse@npm:1.0.6"
@@ -3537,22 +3506,6 @@ fsevents@^1.2.7:
     is-plain-object: ^2.0.3
     split-string: ^3.0.1
   checksum: 2/a97a99a00cc5ed3034ccd690ff4dde167e4182ec4ef2fd5277637a6e388839292559301408b91405534b44e76450bdd443ac95427fde40e9a1a62102c1262bd1
-  languageName: node
-  linkType: hard
-
-"shebang-command@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "shebang-command@npm:2.0.0"
-  dependencies:
-    shebang-regex: ^3.0.0
-  checksum: 2/85aa394d8cedeedf2e03524d6defef67a2b07d3a17d7ee50d4281d62d3fca898f26ebe7aa7bf674d51b80f197aa1d346bc1a10e8efb04377b534f4322c621012
-  languageName: node
-  linkType: hard
-
-"shebang-regex@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "shebang-regex@npm:3.0.0"
-  checksum: 2/ea18044ffaf18129ced5a246660a9171a7dff98999aaa9de8abb237d8a7711d8a1f76e16881399994ee429156717ce1c6a50c665bb18a4d55a7f80b9125b1f7d
   languageName: node
   linkType: hard
 
@@ -3915,17 +3868,6 @@ fsevents@^1.2.7:
   bin:
     which: ./bin/which
   checksum: 2/298d95f9c185c4da22c1bfb1fdfa37c2ba56df8a6b98706ab361bf31a7d3a4845afaecfc48d4de7a259048842b5f2977f51b56f5c06c1f6a83dcf5a9e3de634a
-  languageName: node
-  linkType: hard
-
-"which@npm:^2.0.1":
-  version: 2.0.2
-  resolution: "which@npm:2.0.2"
-  dependencies:
-    isexe: ^2.0.0
-  bin:
-    node-which: ./bin/node-which
-  checksum: 2/ea9b1db1266b08f7880717cf70dd9012dd523e5a317f10fbe4d5e8c1a761c5fd237f88642f2ba33b23f973ff4002c9b26648d63084ab208d8ecef36497315f6e
   languageName: node
   linkType: hard
 

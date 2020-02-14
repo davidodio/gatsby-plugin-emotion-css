@@ -21,7 +21,7 @@
 	],
 	"scripts": {
 		"build": "babel src --out-dir ./dist --ignore **/__tests__",
-		"prepare": "cross-env NODE_ENV=production npm run build",
+		"prepare": "NODE_ENV=production yarn build",
 		"watch": "babel -w src --out-dir ./dist --ignore **/__tests__"
 	},
 	"dependencies": {
@@ -31,8 +31,7 @@
 	"devDependencies": {
 		"@babel/cli": "^7.8.4",
 		"@emotion/babel-preset-css-prop": "^10.0.27",
-		"babel-preset-gatsby-package": "^0.2.16",
-		"cross-env": "^7.0.0"
+		"babel-preset-gatsby-package": "^0.2.16"
 	},
 	"peerDependencies": {
 		"@emotion/core": "^10.0.5",
