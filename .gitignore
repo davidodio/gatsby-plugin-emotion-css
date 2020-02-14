@@ -1,0 +1,14 @@
+# https://next.yarnpkg.com/advanced/qa#which-files-should-be-gitignored
+# not using Zero-Installs
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
+
+node_modules/
+
+dist/
+
+# gatsby
+.cache/
+public/

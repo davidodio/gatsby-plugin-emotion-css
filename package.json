@@ -1,0 +1,22 @@
+{
+	"name": "gatsby-plugin-emotion-css",
+	"description": "Gatsby plugin to provide support for the @emotion/babel-preset-css-prop",
+	"version": "0.1.0",
+	"main": "index.js",
+	"author": "David ODonnell <code@davidod.io>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/davidodio/gatsby-plugin-emotion-css.git"
+	},
+	"bugs": {
+		"url": "https://github.com/davidodio/gatsby-plugin-emotion-css/issues"
+	},
+	"homepage": "https://github.com/davidodio/gatsby-plugin-emotion-css",
+	"keywords": [
+		"gatsby",
+		"gatsby-plugin",
+		"emotion",
+		"css-in-js"
+	]
+}
